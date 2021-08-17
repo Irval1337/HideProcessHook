@@ -81,9 +81,6 @@ NTSTATUS WINAPI HookedNtQuerySystemInformation(
 	return status;
 }
 
-DWORD pID;
-DWORD dll;
-
 DWORD StartHook(LPVOID lpModule) {
 	MODULEINFO modInfo = { 0 };
 	HMODULE hModule = GetModuleHandle(0);
