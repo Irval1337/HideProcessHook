@@ -139,7 +139,7 @@ DWORD UpdateThread(LPVOID lpModule) {
 			file.close();
 			FILE* f = fopen("HidingProcesses.txt", "w");
 			fclose(f);
-			UpdateThread(lpModule);
+			continue;
 		}
 
 
